@@ -30,7 +30,7 @@ export const signup = asyncHandler(async (req, res) => {
         user.desc = desc;
     }
     await user.save();
-    return res.status(201).json(new ApiResponse(user, "User registered successfully"));
+    return res.status(201).json(new ApiResponse(201, user, "User registered successfully"));
 });
 
 export const login = (req, res) => {

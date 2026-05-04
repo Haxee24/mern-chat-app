@@ -7,7 +7,7 @@ export default function asyncHandler(cb){
                 await cb(req, res, next);
             } catch (err) {
                 console.log("ERROR: " + err);
-                throw new ApiError(err.message || "Internal Server Error", err.status || 500);
+                throw new ApiError(err.status || 500, err.message || "Internal Server Error");
             }
         }
     )
