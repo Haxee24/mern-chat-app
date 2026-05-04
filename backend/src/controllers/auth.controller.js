@@ -2,7 +2,7 @@ import asyncHandler from "../utils/asyncHandler.js";
 import ApiError from "../utils/ApiError.js";
 import ApiResponse from "../utils/ApiResponse.js";
 import bcrypt from "bcrypt";
-import User from "../models/User.js";
+import User from "../models/user.model.js";
 import jwt from "jsonwebtoken";
 
 export const signup = asyncHandler(async (req, res) => {

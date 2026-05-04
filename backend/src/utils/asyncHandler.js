@@ -1,5 +1,5 @@
 //Async Handler
-import ApiError from "../errors/ApiError.js";
+import ApiError from "./ApiError.js";
 export default function asyncHandler(cb){
     return (
             async (req, res, next) => {
