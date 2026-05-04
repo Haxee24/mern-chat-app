@@ -7,4 +7,7 @@ app.use(cors({
    credentials: true, // Allow cookies to be sent
 }));
 
+import authRouter from './routes/auth.route.js';
+app.use('/api/auth', authRouter);
+
 export default app;

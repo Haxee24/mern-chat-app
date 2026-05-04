@@ -9,10 +9,3 @@ connectDB();
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
 });
-
-import authRouter from './routes/auth.route.js';
-app.use('/api/auth', authRouter);
-
-app.get("/", (req, res) => {
-  res.send("Hello World");
-})
